@@ -1,0 +1,83 @@
+{
+  "name": "manimjs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build:prod": "tsc -p tsconfig.build.json",
+    "postbuild:prod": "copyfiles --up 1 src/**/*.json dist",
+    "start:dev": "ts-node src/cli/main.ts",
+    "start:prod": "node dist/cli/main.js",
+    "watch:dev": "nodemon --config nodemon.json",
+    "debug:dev": "nodemon --config nodemon-debug.json",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint --fix ./src --ext .ts",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "NODE_ENV=test jest --watch",
+    "test:cov": "NODE_ENV=test jest --coverage",
+    "test:debug": "NODE_ENV=test node --inspect-brk -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "NODE_ENV=test jest --config ./test/jest-e2e.json",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/booleans-oss/manimjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/booleans-oss/manimjs/issues"
+  },
+  "homepage": "https://github.com/booleans-oss/manimjs#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^17.0.0",
+    "@types/supertest": "^2.0.11",
+    "@types/uuid": "^8.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import-helpers": "^1.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sonarjs": "^0.11.0",
+    "eslint-plugin-unicorn": "^39.0.0",
+    "gh-pages": "^3.2.3",
+    "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "lint-staged": "~12.1.3",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.0",
+    "supertest": "^6.1.6",
+    "ts-jest": "^27.1.2",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4",
+    "@commitlint/cli": "^16.0.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "commitiquette": "^1.2.1",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/commitiquette"
+    }
+  }
+}
