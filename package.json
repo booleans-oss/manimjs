@@ -69,7 +69,7 @@
       "git add"
     ]
   },
-  "main": ".eslintrc.js",
+  "main": ".eslintrc",
   "directories": {
     "doc": "docs",
     "test": "test"
