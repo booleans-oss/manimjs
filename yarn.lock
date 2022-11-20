@@ -4962,7 +4962,7 @@ snake-case@^3.0.4:
     dot-case "^3.0.4"
     tslib "^2.0.3"
 
-source-map-support@^0.5.21, source-map-support@^0.5.6:
+source-map-support@^0.5.6:
   version "0.5.21"
   resolved "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
   integrity sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==
@@ -5409,12 +5409,10 @@ tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
-tslog@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.npmjs.org/tslog/-/tslog-3.3.2.tgz#ceef419054a85d992cfdd923dc04aa0ea3539e24"
-  integrity sha512-K+XduMfa9+yiHE/vxbUD/dL7RAbw9yIfi9tMjQj3uQ8evkPRKkmw0mQgEkzmueyg23hJHGaOQmDnCEZoKEws+w==
-  dependencies:
-    source-map-support "^0.5.21"
+tslog@^4.0.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/tslog/-/tslog-4.2.0.tgz#e232d0b6fd448d7bc3838c41d60745cf8097af4e"
+  integrity sha512-dIN3eV6pqxxK+DTuoSZ7UOSMl424EDLuR2C6ZfiPYTEu4szD+8OzX9kJ/98kNKySUC1XjwV8qe54B9EG1+jbIg==
 
 tsutils@^3.21.0:
   version "3.21.0"
