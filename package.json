@@ -80,7 +80,7 @@
     }
   },
   "dependencies": {
-    "recast": "^0.20.5",
+    "recast": "^0.23.0",
     "tslog": "^3.3.2"
   }
 }
